@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #f5f5f5;
+}
+
+.calculator {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+#display {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-bottom: 2px solid #3f51b5;
+  outline: none;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #303f9f;
+}
